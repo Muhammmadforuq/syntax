@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply font-DM-sans
+  }
+
+  h2{
+    @apply font-bold text-heading/tight text-navy-regular;
+  }
+  .btn {
+    @apply inline-flex items-center font-medium text-sm/4 rounded-md space-x-2.5 py-2 lg:py-2.5 px-4 transition ease-linear disabled:text-navy-light-3 disabled:bg-navy-light-4 disabled:hover:bg-navy-light-4 disabled:border-none;
+  }
+
+  .btn-primary{
+    @apply text-navy-regular bg-primary-regular hover:bg-primary-dark;
+  }
+
+  .btn-secondary{
+    @apply border border-navy-regular text-navy-regular hover:bg-teal-light-3;
+  }
+
+  .btn-danger{
+    @apply border border-error-regular text-error-regular hover:bg-error-light-1;
+
+  }
+
+  .link {
+    @apply font-medium text-sm text-navy-regular underline lg:hover:text-navy-light-1 transition ease-linear;
+  }
+
+  .input{
+    @apply w-full border border-black-light-3 rounded focus:outline-none focus:border-navy-regular focus:ring-1 focus:ring-navy-regular placeholder-black-light-2 disabled:placeholder-black-light-3 mb-2 py-3 px-4;
+  }
+
+  .error{
+    @apply  border-error-regular focus:border-error-regular focus:ring-error-regular;
+  }
+
+  input[type=checkbox]{
+    @apply focus:!outline-none focus:ring-transparent rounded border-black-light-5
+
+}
+
+  button{
+    @apply text-left;
+  }
+}
+
+/* company page tab css */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab.active {
+  border-color: #004268;
+}

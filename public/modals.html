@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>modal</title>
+</head>
+
+<body class="bg-slate-100 p-14">
+  <div class="flex flex-wrap items-start justify-center gap-5">
+
+    <!-- Notification -->
+    <!-- are you sure you want to leave page -->
+    <div class="relative max-w-xl w-full bg-white shadow-xl rounded-xl py-8 px-6">
+      <!-- xbtn -->
+      <button class="closed-btn absolute right-6 top-6">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="flex items-start space-x-4">
+        <div class="w-10 h-10 flex justify-center items-center bg-navy-light-4 rounded-full">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 7V9M10 13H10.01M3.07183 17H16.9282C18.4678 17 19.4301 15.3333 18.6603 14L11.7321 2C10.9623 0.666667 9.03778 0.666667 8.26798 2L1.33978 14C0.56998 15.3333 1.53223 17 3.07183 17Z"
+              stroke="#004268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-medium text-lg text-gray-900">Are you sure you want to leave this page?</h3>
+          <p class="max-w-sm text-sm text-gray-500 mt-2">You have entered data that will be lost if you exit the page.
+            Are you sure?</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end space-x-4 mt-4">
+        <a href="#" class="btn btn-secondary h-10 px-8">
+          Stay
+        </a>
+        <a href="#" class="btn btn-primary h-10 px-8">
+          Leave
+        </a>
+      </div>
+    </div>
+
+    <!-- EZ Water Filing Calendar 1 -->
+    <div class="max-w-xl w-full bg-white border border-navy-light-4 rounded-lg px-2.5">
+      <div class="text-sm space-y-4 py-10 px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2.5">
+            <h3 class="font-medium text-xl">Alabama Easywater Filling Calendar</h3>
+            <button>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.8617 4.48667L18.5492 2.79917C19.2814 2.06694 20.4686 2.06694 21.2008 2.79917C21.9331 3.53141 21.9331 4.71859 21.2008 5.45083L10.5822 16.0695C10.0535 16.5981 9.40144 16.9868 8.68489 17.2002L6 18L6.79978 15.3151C7.01323 14.5986 7.40185 13.9465 7.93052 13.4178L16.8617 4.48667ZM16.8617 4.48667L19.5 7.12499M18 14V18.75C18 19.9926 16.9926 21 15.75 21H5.25C4.00736 21 3 19.9926 3 18.75V8.24999C3 7.00735 4.00736 5.99999 5.25 5.99999H10"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <!-- closed-btn -->
+          <button>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 13L13 1M1 1L13 13" stroke="black" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">State</h3>
+          <p>Alabama</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">STRN</h3>
+          <p>24-00-3952-995-15</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">User ID</h3>
+          <p>User ID</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">Password</h3>
+          <label class="min-w-[114px] max-w-[200px] border-none relative flex items-center gap-x-2">
+            <input id="form-input-password"
+              class="block w-full text-navy-regular border-none focus:border-none focus:!ring-transparent p-0"
+              type="password" value="mirkomilboy">
+            <svg id="form-input-password-show" width="16" height="17" viewBox="0 0 16 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.35684 8.71493C1.31078 8.57676 1.31074 8.42716 1.35671 8.28895C2.28229 5.50648 4.907 3.5 8.00035 3.5C11.0923 3.5 13.716 5.50462 14.6427 8.28507C14.6887 8.42325 14.6888 8.57285 14.6428 8.71105C13.7172 11.4935 11.0925 13.5 7.99918 13.5C4.90727 13.5 2.28356 11.4954 1.35684 8.71493Z"
+                stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M9.99981 8.5C9.99981 9.60457 9.10437 10.5 7.9998 10.5C6.89524 10.5 5.9998 9.60457 5.9998 8.5C5.9998 7.39543 6.89524 6.5 7.9998 6.5C9.10437 6.5 9.99981 7.39543 9.99981 8.5Z"
+                stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <svg id="form-input-password-hide" class="hidden" width="16" height="17" viewBox="0 0 16 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.65278 5.98171C2.03737 6.70922 1.56777 7.564 1.28906 8.50099C2.14993 11.392 4.82823 13.5 7.99889 13.5C8.66061 13.5 9.30088 13.4082 9.90766 13.2366M4.15124 4.65175C5.25541 3.92372 6.57796 3.5 7.99948 3.5C11.1701 3.5 13.8484 5.60803 14.7093 8.49901C14.2347 10.0946 13.2065 11.4518 11.8475 12.348M4.15124 4.65175L1.99949 2.5M4.15124 4.65175L6.58528 7.08579M11.8475 12.348L13.9995 14.5M11.8475 12.348L9.4137 9.91421M9.4137 9.91421C9.77563 9.55228 9.99949 9.05228 9.99949 8.5C9.99949 7.39543 9.10406 6.5 7.99949 6.5C7.44721 6.5 6.94721 6.72386 6.58528 7.08579M9.4137 9.91421L6.58528 7.08579"
+                stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </label>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">PIN</h3>
+          <p>53475</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">Secret Question</h3>
+          <p>What was your favorite sport in high school?</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">Answer of the secret question</h3>
+          <p>Basketball</p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-bold">Outlet ID</h3>
+          <p>45-248529</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delate warning -->
+    <div class="max-w-lg w-full bg-white border border-navy-light-4 shadow-xl rounded-lg p-4">
+      <div class="flex items-start space-x-4">
+        <div class="w-10 h-10 flex flex-shrink-0 justify-center items-center bg-error-light-1 rounded-full">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.99955 7V9M9.99955 13H10.0095M3.07134 17H16.9277C18.4673 17 19.4296 15.3333 18.6598 14L11.7316 2C10.9618 0.666667 9.0373 0.666667 8.2675 2L1.33929 14C0.569492 15.3333 1.53174 17 3.07134 17Z"
+              stroke="#D41919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-medium text-lg text-gray-900">Are you sure you want to delete this entity from Easywater?</h3>
+          <p class="max-w-sm text-sm text-gray-500 mt-2">Once you delete this entity, all data associated with it will
+            be lost.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end space-x-4 mt-4">
+        <a href="#" class="btn btn-secondary h-10 px-8">
+          Cancel
+        </a>
+        <a href="#" class="btn btn-primary h-10 px-8">
+          Delete
+        </a>
+      </div>
+    </div>
+
+    <!-- Seccessfully-->
+    <div
+      class="max-w-lg w-full flex items-center justify-between bg-white border border-navy-light-4 shadow-xl rounded-lg p-4">
+      <div class="flex items-center space-x-3.5">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM11.7071 7.20711C12.0976 6.81658 12.0976 6.18342 11.7071 5.79289C11.3166 5.40237 10.6834 5.40237 10.2929 5.79289L7 9.08579L5.70711 7.79289C5.31658 7.40237 4.68342 7.40237 4.29289 7.79289C3.90237 8.18342 3.90237 8.81658 4.29289 9.20711L6.29289 11.2071C6.68342 11.5976 7.31658 11.5976 7.70711 11.2071L11.7071 7.20711Z"
+            fill="#858C94" />
+        </svg>
+        <p class="text-[#2C3A4B]">Successfully removed</p>
+      </div>
+      <button class="bg-[#F4F6F9] rounded-md p-1.5">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.29289 4.79289C4.68342 4.40237 5.31658 4.40237 5.70711 4.79289L10 9.08579L14.2929 4.79289C14.6834 4.40237 15.3166 4.40237 15.7071 4.79289C16.0976 5.18342 16.0976 5.81658 15.7071 6.20711L11.4142 10.5L15.7071 14.7929C16.0976 15.1834 16.0976 15.8166 15.7071 16.2071C15.3166 16.5976 14.6834 16.5976 14.2929 16.2071L10 11.9142L5.70711 16.2071C5.31658 16.5976 4.68342 16.5976 4.29289 16.2071C3.90237 15.8166 3.90237 15.1834 4.29289 14.7929L8.58579 10.5L4.29289 6.20711C3.90237 5.81658 3.90237 5.18342 4.29289 4.79289Z"
+            fill="#394452" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Seccessfully-->
+    <div
+      class="max-w-md w-full flex items-center bg-white border border-navy-light-4 shadow-xl rounded-lg space-x-2 p-4">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="16" fill="#DDE0EA" />
+        <path d="M11.334 16.6667L14.0007 19.3334L20.6673 12.6667" stroke="#004268" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <p class="text-navy-regular font-medium text-sm">Successfully exported 2023 March Financial CSV</p>
+    </div>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

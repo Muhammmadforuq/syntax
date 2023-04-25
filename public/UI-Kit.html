@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=q">
+  <title>UI Kit</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="p-10">
+
+  <h1 class="font-bold text-5xl text-center pb-4">Buttons</h1>
+  <!-- button -->
+  <div class="flex items-center justify-center space-x-5 pb-20">
+    <!-- Primary btn -->
+    <button class="btn btn-primary">
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Label</span>
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <!-- Secondary/M btn -->
+    <button class="btn btn-secondary">
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Label</span>
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <!-- Danger/M btn -->
+    <button class="btn btn-danger">
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Label</span>
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <!-- Danger/M btn -->
+    <button disabled class="btn">
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Label</span>
+      <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 6L5 10L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- link -->
+  <div class="flex items-center justify-center space-x-5 pb-20">
+    <!-- ordinary link -->
+    <a href="#" class="link">Request to edit</a>
+    <!-- disabled link -->
+    <a aria-disabled="true" class="link text-black-light-3 pointer-events-none">Request to edit</a>
+    <!-- link with < icon -->
+    <a href="#" class="link flex items-center space-x-1">
+      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 13.5L5.5 8.5L10.5 3.5" stroke="#004268" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      <span>Back</span>
+    </a>
+  </div>
+
+
+
+  <h1 class="font-bold text-5xl text-center pt-10">Inputs</h1>
+  <!-- text -->
+  <p class="font-bold text-xl text-center pt-4">text</p>
+  <div class="flex items-center justify-center space-x-5 pb-20">
+    <!-- input text -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+      <input class="peer input" placeholder="Placeholder text" type="text">
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+    <!-- input text disabled -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium text-black-light-3 mb-2">Label</label>
+      <input class="peer input" placeholder="Placeholder text" type="text" disabled>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+    <!-- input text error -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+      <input class="peer input error" placeholder="Placeholder text" type="text">
+      <span class="block text-xs text-error-regular peer-disabled:text-black-light-3">Caption</span>
+    </div>
+  </div>
+
+  <!-- dropdown -->
+  <p class="font-bold text-xl text-center pt-4">dropdown</p>
+  <div class="flex items-center justify-center space-x-5 pb-48">
+    <!-- dropdown -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative dropdown">
+        <svg class="dropdownSvg absolute top-3.5 right-4 transition-all ease-linear" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="#5F5F5F" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <input class="peer dropdownInput input cursor-pointer box-border" placeholder="Placeholder text" type="text"
+          readonly>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-navy-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+
+    <!-- disabled dropdown -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative">
+        <svg class="dropdownSvg absolute top-3.5 right-4 transition-all ease-linear" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="#5F5F5F" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <input class="peer dropdownInput input cursor-pointer box-border" placeholder="Placeholder text" type="text"
+          readonly disabled>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-navy-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+
+    <!-- error dropdown -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative dropdown">
+        <svg class="dropdownSvg absolute top-3.5 right-4 transition-all ease-linear" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="#5F5F5F" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <input class="peer dropdownInput input error cursor-pointer box-border" placeholder="Placeholder text"
+          type="text" readonly>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-error-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-error-regular peer-disabled:text-black-light-3">Caption</span>
+    </div>
+  </div>
+
+  <!-- Typeahead -->
+  <p class="font-bold text-xl text-center pt-4">Typeahead</p>
+  <div class="flex items-center justify-center space-x-5 pb-48">
+    <!-- Typeahead -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative dropdown">
+        <span></span>
+
+        <input class="peer dropdownInput input cursor-pointer box-border" placeholder="Placeholder text" type="text"
+          readonly>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-navy-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+
+    <!-- disabled Typeahead -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative">
+        <span></span>
+
+        <input class="peer dropdownInput input cursor-pointer box-border" placeholder="Placeholder text" type="text"
+          readonly disabled>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-navy-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+
+    <!-- error Typeahead -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+
+      <div class="relative dropdown">
+        <span></span>
+
+        <input class="peer dropdownInput input error cursor-pointer box-border" placeholder="Placeholder text"
+          type="text" readonly>
+
+        <!-- options -->
+        <div
+          class="options hidden absolute top-12 left-0 w-full bg-white border-2 border-error-regular rounded-b overflow-hidden">
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 1</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 2</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 3</div>
+          <div class="cursor-pointer hover:bg-teal-light-3 transition-all ease-linear p-4">option 4</div>
+        </div>
+      </div>
+      <span class="block text-xs text-error-regular peer-disabled:text-black-light-3">Caption</span>
+    </div>
+  </div>
+
+  <!-- Search input -->
+  <p class="font-bold text-xl text-center py-4">Search input</p>
+  <div class="flex items-center justify-center space-x-5 pb-48">
+    <!-- search -->
+    <div class="relative max-w-md w-full">
+      <svg class="absolute top-4 left-3" width="16" height="17" viewBox="0 0 16 17" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14 14.5L10.5355 11.0355M10.5355 11.0355C11.4404 10.1307 12 8.88071 12 7.5C12 4.73858 9.76142 2.5 7 2.5C4.23858 2.5 2 4.73858 2 7.5C2 10.2614 4.23858 12.5 7 12.5C8.38071 12.5 9.63071 11.9404 10.5355 11.0355Z"
+          stroke="#5F5F5F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <input class="peer input pl-9" placeholder="Placeholder text" type="search">
+    </div>
+
+    <!-- search disabled -->
+    <div class="relative max-w-md w-full">
+      <svg class="absolute top-4 left-3" width="16" height="17" viewBox="0 0 16 17" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14 14.5L10.5355 11.0355M10.5355 11.0355C11.4404 10.1307 12 8.88071 12 7.5C12 4.73858 9.76142 2.5 7 2.5C4.23858 2.5 2 4.73858 2 7.5C2 10.2614 4.23858 12.5 7 12.5C8.38071 12.5 9.63071 11.9404 10.5355 11.0355Z"
+          stroke="#5F5F5F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <input class="peer input pl-9" placeholder="Placeholder text" type="search" disabled>
+    </div>
+  </div>
+
+  <!-- Date -->
+  <p class="font-bold text-xl text-center pt-4">Date</p>
+  <div class="flex items-center justify-center space-x-5 pb-20">
+    <!-- input date -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+      <input class="peer input" placeholder="Placeholder text" type="date">
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+    <!-- input date disabled -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium text-black-light-3 mb-2">Label</label>
+      <input class="peer input" placeholder="Placeholder text" type="date" disabled>
+      <span class="block text-xs text-black-light-2 peer-disabled:text-black-light-3">Caption</span>
+    </div>
+    <!-- input date error -->
+    <div class="max-w-md w-full">
+      <label class="block font-medium mb-2">Label</label>
+      <input class="peer input error" placeholder="Placeholder text" type="date">
+      <span class="block text-xs text-error-regular peer-disabled:text-black-light-3">Caption</span>
+    </div>
+  </div>
+
+  <!-- Upload -->
+  <p class="font-bold text-xl text-center py-4">Upload</p>
+  <div class="flex items-center justify-center space-x-5 pb-20">
+    <!-- upload -->
+    <div class="flex flex-col max-w-md w-full">
+      <span class="block font-medium pb-2">Label</span>
+      <label for="dropzone-file"
+        class="w-full border-[1.5px] border-black-light-3 border-dashed rounded-md cursor-pointer bg-white hover:border-navy-light-1 py-12">
+        <div class="flex flex-col items-center justify-center">
+          <svg width="48" class="mb-2" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12V32M8 32V36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H36C37.0609 40 38.0783 39.5786 38.8284 38.8284C39.5786 38.0783 40 37.0609 40 36V28M8 32L17.172 22.828C17.9221 22.0781 18.9393 21.6569 20 21.6569C21.0607 21.6569 22.0779 22.0781 22.828 22.828L28 28M40 20V28M40 28L36.828 24.828C36.0779 24.0781 35.0607 23.6569 34 23.6569C32.9393 23.6569 31.9221 24.0781 31.172 24.828L28 28M28 28L32 32M36 8H44M40 4V12M28 16H28.02"
+              stroke="#5F5F5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <p class="mb-1 text-sm leading-normal text-black-light-2"><span
+              class="font-medium text-base leading-normal">Upload a file</span> or drag and drop</p>
+          <p class="text-xs text-black-light-2 leading-normal ">.csv or .xlsx up to 10MB</p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" />
+      </label>
+      <span class="block text-xs text-black-light-2 pt-2">Caption</span>
+    </div>
+    <!-- upload disabled -->
+    <div class="flex flex-col max-w-md w-full">
+      <span class="block font-medium text-black-light-3 pb-2">Label</span>
+      <label for="dropzone-file"
+        class="w-full border-[1.5px] border-black-light-3 border-dashed rounded-md cursor-pointer bg-white hover:border-navy-light-1 py-12 pointer-events-none">
+        <div class="flex flex-col items-center justify-center">
+          <svg width="48" class="mb-2" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12V32M8 32V36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H36C37.0609 40 38.0783 39.5786 38.8284 38.8284C39.5786 38.0783 40 37.0609 40 36V28M8 32L17.172 22.828C17.9221 22.0781 18.9393 21.6569 20 21.6569C21.0607 21.6569 22.0779 22.0781 22.828 22.828L28 28M40 20V28M40 28L36.828 24.828C36.0779 24.0781 35.0607 23.6569 34 23.6569C32.9393 23.6569 31.9221 24.0781 31.172 24.828L28 28M28 28L32 32M36 8H44M40 4V12M28 16H28.02"
+              stroke="#5F5F5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <p class="mb-1 text-sm leading-normal text-black-light-3"><span
+              class="font-medium text-base leading-normal">Upload a file</span> or drag and drop</p>
+          <p class="text-xs text-black-light-3 leading-normal ">.csv or .xlsx up to 10MB</p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" disabled />
+      </label>
+      <span class="block text-xs text-black-light-3 pt-2">Caption</span>
+    </div>
+
+    <!-- uploading -->
+    <div class="max-w-md w-full">
+      <span class="block font-medium pb-2">Label</span>
+      <div class="w-full border border-black-light-5 rounded-lg bg-white p-6">
+        <div class="flex items-start pb-4">
+          <svg class="pt-1" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 19.5V16C26 13.5147 23.9853 11.5 21.5 11.5H19.5C18.6716 11.5 18 10.8284 18 10V8C18 5.51472 15.9853 3.5 13.5 3.5H11M11 20.5H21M11 24.5H16M14 3.5H7.5C6.67157 3.5 6 4.17157 6 5V28C6 28.8284 6.67157 29.5 7.5 29.5H24.5C25.3284 29.5 26 28.8284 26 28V15.5C26 8.87258 20.6274 3.5 14 3.5Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div class="pl-2">
+            <p class="font-medium text-sm">Easywater_fillingCalendar.xlsx</p>
+            <p class="text-xs text-navy-regular">3,5 MB of 5,7 MB</p>
+          </div>
+
+          <button class="ml-auto">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12.5L12 4.5M4 4.5L12 12.5" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- progress -->
+        <div class="flex items-center space-x-2">
+          <div class="w-full bg-navy-light-3 rounded-full h-1">
+            <div class="bg-navy-regular h-1 rounded-full" style="width: 63%"></div>
+          </div>
+          <div class="text-xs text-navy-regular">63%</div>
+        </div>
+      </div>
+      <span class="block text-xs text-black-light-2 pt-2">Caption</span>
+    </div>
+
+    <!-- uploading failed -->
+    <div class="max-w-md w-full">
+      <span class="block font-medium pb-2">Label</span>
+      <div class="w-full border border-black-light-5 rounded-lg bg-white p-6">
+        <div class="flex items-start pb-4">
+          <svg class="pt-1" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 19.5V16C26 13.5147 23.9853 11.5 21.5 11.5H19.5C18.6716 11.5 18 10.8284 18 10V8C18 5.51472 15.9853 3.5 13.5 3.5H11M11 20.5H21M11 24.5H16M14 3.5H7.5C6.67157 3.5 6 4.17157 6 5V28C6 28.8284 6.67157 29.5 7.5 29.5H24.5C25.3284 29.5 26 28.8284 26 28V15.5C26 8.87258 20.6274 3.5 14 3.5Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div class="pl-2">
+            <p class="font-medium text-sm">Easywater_fillingCalendar.xlsx</p>
+            <p class="text-xs text-error-regular">Upload failed</p>
+          </div>
+
+          <button class="ml-auto text-error-regular">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12.5L12 4.5M4 4.5L12 12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- progress -->
+        <div class="flex items-center space-x-2">
+          <div class="w-full bg-error-light-1 rounded-full h-1">
+            <div class="bg-error-regular h-1 rounded-full" style="width: 63%"></div>
+          </div>
+        </div>
+      </div>
+      <span class="block text-xs text-error-regular pt-2">Caption</span>
+    </div>
+  </div>
+
+  <h1 class="font-bold text-5xl text-center pt-10 pb-5">UI Elements</h1>
+
+  <div class="flex items-start flex-wrap justify-center gap-10 pb-10">
+    <!-- avatar -->
+    <div class="w-12 h-12 flex items-center justify-center bg-orange-light-3 rounded-full">
+      <span class="font-medium text-xl text-navy-regular">PD</span>
+    </div>
+
+    <!-- radio -->
+    <div class="flex items-center space-x-4">
+      <input id="" type="radio" value="" name="default-radio" class="w-4 h-4 text-navy-regular border-black-light-5"
+        checked>
+      <input id="" type="radio" value="" name="default-radio" class="w-4 h-4 text-navy-regular border-black-light-5">
+    </div>
+
+    <!-- checkbox -->
+    <div class="flex items-center space-x-4">
+      <input id="" type="checkbox" value="" name="" class="w-4 h-4 rounded text-navy-regular border-gray-300">
+      <input id="" type="checkbox" value="" name="" class="w-4 h-4 rounded text-navy-regular border-gray-300" checked>
+      <input id="indeterminate" type="checkbox" value="" name=""
+        class="w-4 h-4 rounded text-navy-regular border-gray-300">
+    </div>
+
+    <!-- Disabled and Active-->
+    <div class="space-x-3">
+      <button disabled type="button"
+        class="font-medium text-xs text-[#394452] bg-brand-wheat rounded-xl py-1 px-2.5">Disabled</button>
+      <button class="font-medium text-xs text-brand-wheat bg-[#6D7580] rounded-xl py-1 px-2.5">Active</button>
+    </div>
+    <!-- Tab Name -->
+    <div class="space-x-8">
+      <button type="button"
+        class="text-navy-light-1 border-b-2 border-transparent focus:text-navy-regular focus:border-navy-regular pb-4">Tab
+        name</button>
+      <button type="button" class="border-b-2 text-navy-regular border-navy-regular pb-4">Tab name</button>
+    </div>
+    <!-- Checked , error and info -->
+    <div class="flex items-center space-x-4">
+      <div class="w-7 h-7 grid place-items-center rounded-full bg-[#F7DEB5]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7 5V7.5M13 7C13 10.3137 10.3137 13 7 13C3.68629 13 1 10.3137 1 7C1 3.68629 3.68629 1 7 1C10.3137 1 13 3.68629 13 7ZM7 9.5H7.005V9.505H7V9.5Z"
+            stroke="#8E6630" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="w-7 h-7 grid place-items-center rounded-full bg-[#F6D4D5]">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 12L12 4M4 4L12 12" stroke="#9F2A32" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="w-7 h-7 grid place-items-center rounded-full bg-[#E4F6DC]">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8.5L7 12.5L13 3.5" stroke="#568D45" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+      </div>
+    </div>
+    <!-- Account settings and Edit -->
+    <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+      <button class="w-56 text-navy-regular py-2 px-4">Account settings</button>
+      <button class="w-56 flex items-center text-navy-regular space-x-3 py-2 px-4">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.2411 3.49111L12.3661 2.36612C12.8543 1.87796 13.6457 1.87796 14.1339 2.36612C14.622 2.85427 14.622 3.64573 14.1339 4.13388L7.05479 11.213C6.70234 11.5654 6.26762 11.8245 5.78993 11.9668L4 12.5L4.53319 10.7101C4.67548 10.2324 4.93456 9.79767 5.28701 9.44522L11.2411 3.49111ZM11.2411 3.49111L13 5.24999M12 9.83333V13C12 13.8284 11.3284 14.5 10.5 14.5H3.5C2.67157 14.5 2 13.8284 2 13V5.99999C2 5.17157 2.67157 4.49999 3.5 4.49999H6.66667"
+            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Edit</span>
+      </button>
+      <button class="w-56 text-navy-regular bg-navy-light-4 py-2 px-4">Account settings</button>
+      <button class="w-56 flex items-center text-navy-regular  bg-navy-light-4 space-x-3 py-2 px-4">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.2411 3.49111L12.3661 2.36612C12.8543 1.87796 13.6457 1.87796 14.1339 2.36612C14.622 2.85427 14.622 3.64573 14.1339 4.13388L7.05479 11.213C6.70234 11.5654 6.26762 11.8245 5.78993 11.9668L4 12.5L4.53319 10.7101C4.67548 10.2324 4.93456 9.79767 5.28701 9.44522L11.2411 3.49111ZM11.2411 3.49111L13 5.24999M12 9.83333V13C12 13.8284 11.3284 14.5 10.5 14.5H3.5C2.67157 14.5 2 13.8284 2 13V5.99999C2 5.17157 2.67157 4.49999 3.5 4.49999H6.66667"
+            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Edit</span>
+      </button>
+      <button class="w-56 text-white bg-navy-regular py-2 px-4">Account settings</button>
+      <button class="w-56 flex items-center text-white bg-navy-regular space-x-3 py-2 px-4">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.2411 3.49111L12.3661 2.36612C12.8543 1.87796 13.6457 1.87796 14.1339 2.36612C14.622 2.85427 14.622 3.64573 14.1339 4.13388L7.05479 11.213C6.70234 11.5654 6.26762 11.8245 5.78993 11.9668L4 12.5L4.53319 10.7101C4.67548 10.2324 4.93456 9.79767 5.28701 9.44522L11.2411 3.49111ZM11.2411 3.49111L13 5.24999M12 9.83333V13C12 13.8284 11.3284 14.5 10.5 14.5H3.5C2.67157 14.5 2 13.8284 2 13V5.99999C2 5.17157 2.67157 4.49999 3.5 4.49999H6.66667"
+            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Edit</span>
+      </button>
+    </div>
+    <!-- Today -->
+    <div>
+      <button class="text-sm rounded bg-navy-regular text-white py-1.5 px-2">Today</button>
+      <button class="text-sm rounded py-1.5 px-2">Today</button>
+    </div>
+    <!-- Parent Companies -->
+    <div class="flex flex-col gap-y-2">
+      <a href="#"
+        class="inline-block text-sm text-navy-regular underline decoration-transparent hover:decoration-navy-regular transition-colors ease-linear">
+        Parent Companies
+      </a>
+      <a href="#" class="inline-block font-bold text-sm text-navy-regular">
+        Parent Companies
+      </a>
+      <a href="#"
+        class="inline-flex items-center text-sm text-navy-regular border-b border-transparent hover:border-navy-regular transition-colors ease-linear space-x-1 pb-1">
+        <span>Parent Companies</span>
+        <span class="inline-block font-medium text-xsm/3 bg-navy-light-4 rounded-full py-1 px-2.5">Parent</span>
+      </a>
+    </div>
+    <!-- Executive Officer #1 -->
+    <div>
+      <button class="flex items-center font-bold text-sm text-navy-regular space-x-2">
+        <span>Executive Officer #1</span>
+        <svg class="rotate" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 6L8 11L3 6" stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="text-sm text-navy-regular space-y-6">
+        <div>
+          <h3 class="font-bold mb-1">Name</h3>
+          <p>Katherine Reedy</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-1">Title</h3>
+          <p>CEO</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-1">SSN</h3>
+          <p>326-01-XXXX</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-1">DOB</h3>
+          <p>11/18/1972</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-1">Driver’s Licence</h3>
+          <p>S-514-778-616-977</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-1">Home Address</h3>
+          <p>1970 Kerry Way, Gardena CA</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <label class="w-60 border-none relative flex items-center">
+      <input id="form-input-password"
+        class="block w-full text-navy-regular border-none focus:border-none focus:!ring-transparent py-3 px-4"
+        placeholder="Placeholder text" type="password">
+      <svg id="form-input-password-show" class="absolute right-4 top-1/2 -translate-y-1/2" width="16" height="17"
+        viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.35684 8.71493C1.31078 8.57676 1.31074 8.42716 1.35671 8.28895C2.28229 5.50648 4.907 3.5 8.00035 3.5C11.0923 3.5 13.716 5.50462 14.6427 8.28507C14.6887 8.42325 14.6888 8.57285 14.6428 8.71105C13.7172 11.4935 11.0925 13.5 7.99918 13.5C4.90727 13.5 2.28356 11.4954 1.35684 8.71493Z"
+          stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M9.99981 8.5C9.99981 9.60457 9.10437 10.5 7.9998 10.5C6.89524 10.5 5.9998 9.60457 5.9998 8.5C5.9998 7.39543 6.89524 6.5 7.9998 6.5C9.10437 6.5 9.99981 7.39543 9.99981 8.5Z"
+          stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <svg id="form-input-password-hide" class="absolute hidden right-4 top-1/2 -translate-y-1/2" width="16" height="17"
+        viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M2.65278 5.98171C2.03737 6.70922 1.56777 7.564 1.28906 8.50099C2.14993 11.392 4.82823 13.5 7.99889 13.5C8.66061 13.5 9.30088 13.4082 9.90766 13.2366M4.15124 4.65175C5.25541 3.92372 6.57796 3.5 7.99948 3.5C11.1701 3.5 13.8484 5.60803 14.7093 8.49901C14.2347 10.0946 13.2065 11.4518 11.8475 12.348M4.15124 4.65175L1.99949 2.5M4.15124 4.65175L6.58528 7.08579M11.8475 12.348L13.9995 14.5M11.8475 12.348L9.4137 9.91421M9.4137 9.91421C9.77563 9.55228 9.99949 9.05228 9.99949 8.5C9.99949 7.39543 9.10406 6.5 7.99949 6.5C7.44721 6.5 6.94721 6.72386 6.58528 7.08579M9.4137 9.91421L6.58528 7.08579"
+          stroke="#004268" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </label>
+    <!-- Pagination -->
+    <div>
+      <div
+        class="pagination inline-flex items-center font-medium text-navy-regular border-navy-light-1 border bg-navy-regular rounded-lg overflow-hidden space-x-px">
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 13L5.5 8L10.5 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          1
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          2
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          3
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          4
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          ...
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          9
+        </a>
+        <a href="#" class="w-10 h-9 grid place-items-center hover:text-white bg-white hover:bg-navy-regular transition">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 3L10.5 8L5.5 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <h1 class="font-bold text-5xl text-center pt-10 pb-5">Tables</h1>
+  <!-- cell types -->
+  <div class="flex flex-wrap justify-center items-center gap-5">
+    <!-- header -->
+    <div>
+      <div data-tooltip-target="tooltip-name-component"
+        class="w-52 font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase py-3 px-6">Name</div>
+      <div id="tooltip-name-component" role="tooltip"
+        class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+        NAME
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+
+    <!-- simple -->
+    <button class="text-sm disabled:bg-black-light-6 py-4 px-6">
+      Inspire Brands
+    </button>
+
+    <!-- simple disabled -->
+    <button class="text-sm disabled:bg-black-light-6 py-4 px-6" disabled>
+      Inspire Brands
+    </button>
+
+    <!-- editable -->
+    <div>
+      <input class="text-sm border border-navy-light-4 py-4 px-6" type="text" name="" id=""
+        placeholder="Inspire Brands">
+    </div>
+
+    <!-- link -->
+    <button class="text-sm underline disabled:bg-black-light-6 py-4 px-6">
+      Inspire Brands
+    </button>
+
+    <!-- link disabled -->
+    <button class="text-sm underline disabled:bg-black-light-6 py-4 px-6" disabled>
+      Inspire Brands
+    </button>
+
+    <!-- actions -->
+    <div class="flex items-center space-x-3">
+      <button class="btn btn-primary h-9">Approve</button>
+      <button class="btn btn-secondary h-9">Download</button>
+      <button
+        class="flex items-center font-medium text-navy-regular text-sm underline disabled:text-black-light-3 space-x-2 px-6">
+        <p>Request to edit</p>
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5 8.75L12 16.25L4.5 8.75" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- actions disabled -->
+    <div class="flex items-center space-x-3">
+      <button class="btn btn-primary h-9" disabled>Approve</button>
+      <button class="btn btn-secondary h-9" disabled>Download</button>
+      <button
+        class="flex items-center font-medium text-navy-regular text-sm underline disabled:text-black-light-3 space-x-2 px-6"
+        disabled>
+        <p>Request to edit</p>
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5 8.75L12 16.25L4.5 8.75" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Table -->
+  <div class="text-center space-y-5 mt-6">
+    <h2>Simple</h2>
+    <div class="max-w-4xl w-full mx-auto text-sm rounded-lg overflow-hidden border border-navy-light-3">
+      <!-- table header -->
+      <div class="flex font-medium text-xs text-navy-light-1 uppercase bg-teal-light-3">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <div data-tooltip-target="tooltip-name"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Name</div>
+          <div id="tooltip-name" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            NAME
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-number"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Number</div>
+          <div id="tooltip-number" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            Number
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-file"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">File</div>
+          <div id="tooltip-file" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            File
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-actions"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Actions</div>
+          <div id="tooltip-actions" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            Actions
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Table body 1 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 2 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 3 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 4 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 5 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 6 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+      <!-- Table body 7 -->
+      <div class="flex items-center py-2">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <p>Inspire Brands</p>
+        </div>
+        <div class="w-1/4 text-left px-6">
+          <p>Inspire Brands</p>
+        </div>
+        <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+              stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="underline">filetodownload.jpg</p>
+        </button>
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <button class="btn btn-primary h-9">Approve</button>
+          <button class="btn btn-secondary h-9">Approve</button>
+        </div>
+      </div>
+    </div>
+
+    <h2>Nested</h2>
+    <div class="accordion max-w-4xl w-full mx-auto text-sm rounded-lg overflow-hidden border border-navy-light-3">
+      <!-- Table header -->
+      <div class="flex font-medium text-xs text-navy-light-1 uppercase bg-teal-light-3">
+        <div class="w-1/4 flex items-center space-x-2 px-6">
+          <input type="checkbox" name="" id="">
+          <div data-tooltip-target="tooltip-name"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Name</div>
+          <div id="tooltip-name" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            NAME
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-number"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Number</div>
+          <div id="tooltip-number" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            Number
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-file"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">File</div>
+          <div id="tooltip-file" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            File
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <div class="w-1/4 flex items-center justify-between space-x-2 px-6">
+          <div data-tooltip-target="tooltip-actions"
+            class="font-medium text-xs text-navy-light-1 bg-teal-light-3 uppercase w-full text-left py-3">Actions</div>
+          <div id="tooltip-actions" role="tooltip"
+            class="tooltip absolute z-10 invisible inline-block font-medium text-xs text-navy-light-1 bg-teal-light-3 rounded border border-navy-light-4 opacity-0 transition-opacity duration-300 px-3 py-2">
+            Actions
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.332 5.5L8.33203 10.5L3.33203 5.5" stroke="#526584" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Table body 1 -->
+      <section class="">
+        <div class="flex items-center py-2">
+          <button type="button" class="accordionBtn w-1/4 flex items-center space-x-2 px-6">
+            <input type="checkbox" name="" id="">
+            <p>Inspire Brands</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="w-1/4 text-left px-6">
+            <p>Inspire Brands</p>
+          </div>
+          <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="underline">filetodownload.jpg</p>
+          </button>
+          <div class="w-1/4 flex items-center space-x-2 px-6">
+            <button class="btn btn-primary h-9">Approve</button>
+            <button class="btn btn-secondary h-9">Approve</button>
+          </div>
+        </div>
+
+        <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden">
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Table body 2 -->
+      <section class="">
+        <div class="flex items-center py-2">
+          <button type="button" class="accordionBtn w-1/4 flex items-center space-x-2 px-6">
+            <input type="checkbox" name="" id="">
+            <p>Inspire Brands</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="w-1/4 text-left px-6">
+            <p>Inspire Brands</p>
+          </div>
+          <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="underline">filetodownload.jpg</p>
+          </button>
+          <div class="w-1/4 flex items-center space-x-2 px-6">
+            <button class="btn btn-primary h-9">Approve</button>
+            <button class="btn btn-secondary h-9">Approve</button>
+          </div>
+        </div>
+
+        <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden">
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Table body 3 -->
+      <section class="">
+        <div class="flex items-center py-2">
+          <button type="button" class="accordionBtn w-1/4 flex items-center space-x-2 px-6">
+            <input type="checkbox" name="" id="">
+            <p>Inspire Brands</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="w-1/4 text-left px-6">
+            <p>Inspire Brands</p>
+          </div>
+          <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="underline">filetodownload.jpg</p>
+          </button>
+          <div class="w-1/4 flex items-center space-x-2 px-6">
+            <button class="btn btn-primary h-9">Approve</button>
+            <button class="btn btn-secondary h-9">Approve</button>
+          </div>
+        </div>
+
+        <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden">
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Table body 4 -->
+      <section class="">
+        <div class="flex items-center py-2">
+          <button type="button" class="accordionBtn w-1/4 flex items-center space-x-2 px-6">
+            <input type="checkbox" name="" id="">
+            <p>Inspire Brands</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="w-1/4 text-left px-6">
+            <p>Inspire Brands</p>
+          </div>
+          <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="underline">filetodownload.jpg</p>
+          </button>
+          <div class="w-1/4 flex items-center space-x-2 px-6">
+            <button class="btn btn-primary h-9">Approve</button>
+            <button class="btn btn-secondary h-9">Approve</button>
+          </div>
+        </div>
+
+        <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden">
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+          <div class="flex items-center py-2">
+            <button type="button" class="w-1/4 flex items-center space-x-2 pl-11 pr-2">
+              <input type="checkbox" name="" id="">
+              <p>Inspire Brands</p>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6L8 11L3 6" stroke="black" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="w-1/4 text-left px-6">
+              <p>Inspire Brands</p>
+            </div>
+            <button type="button" class="w-1/4 flex items-center space-x-2 px-6">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.834 14.75V12.125C19.834 10.261 18.3229 8.75 16.459 8.75H14.959C14.3377 8.75 13.834 8.24632 13.834 7.625V6.125C13.834 4.26104 12.3229 2.75 10.459 2.75H8.58398M8.58398 15.5H16.084M8.58398 18.5H12.334M10.834 2.75H5.95898C5.33766 2.75 4.83398 3.25368 4.83398 3.875V21.125C4.83398 21.7463 5.33766 22.25 5.95898 22.25H18.709C19.3303 22.25 19.834 21.7463 19.834 21.125V11.75C19.834 6.77944 15.8045 2.75 10.834 2.75Z"
+                  stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="underline">filetodownload.jpg</p>
+            </button>
+            <div class="w-1/4 flex items-center space-x-2 px-6">
+              <button class="btn btn-primary h-9">Approve</button>
+              <button class="btn btn-secondary h-9">Approve</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/flowbite.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
